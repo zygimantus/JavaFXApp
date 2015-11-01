@@ -14,6 +14,31 @@
         <mainClass>com.zygimantus.javafxapp.MainApp</mainClass>
     </properties>
 
+	<dependencies>
+        <!--logging dependencies-->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.4.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-slf4j-impl</artifactId>
+            <version>2.4.1</version>
+        </dependency>
+        <!--Bridge logging from JCL to SLF4j-->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>1.7.12</version>
+        </dependency>
+	</dependencies>
+
     <organization>
         <!-- Used as the 'Vendor' for JNLP generation -->
         <name>Your Organisation</name>
